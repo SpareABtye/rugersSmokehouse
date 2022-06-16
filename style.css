@@ -1,3 +1,34 @@
-/* body {
-    margin: none;
-} */
+body {
+    margin: 0;
+}
+
+#navbar {
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+#about {
+    background-color: beige;
+    height: 20rem;
+}
+
+#menu {
+    height: 20rem;
+}
+
+#three {
+    height: 20rem;
+    background-color: beige;
+}
+
+#four {
+    height: 20rem;
+}
+
+#footer {
+    height: 5rem;
+    background-color: beige;
+}
