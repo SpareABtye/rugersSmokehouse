@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-image: url("/images/butcherPaper1.jpg");
 }
 
 #navbar {
@@ -16,7 +17,11 @@ h3 {
 }
 
 #menu {
-    height: 20rem;
+    height: 50rem;
+    background-image: url("images/Menu/spread1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 #three {
