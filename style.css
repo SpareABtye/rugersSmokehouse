@@ -17,11 +17,27 @@ h3 {
 }
 
 #menu {
+    display: grid;
+    grid-template-columns: 25% 25%;
     height: 50rem;
     background-image: url("images/Menu/spread1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.menuBox {
+    display: grid;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+h3 {
+    width: 400%;
+}
+
+h2 {
+    justify-content: center;
 }
 
 #three {
