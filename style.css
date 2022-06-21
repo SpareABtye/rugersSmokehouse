@@ -1,7 +1,4 @@
-body {
-    margin: 0;
-    background-image: url("/images/butcherPaper1.jpg");
-}
+/* -----Nav----- */
 
 #navbar {
     text-align: center;
@@ -11,33 +8,78 @@ h3 {
     margin: 0;
 }
 
-#about {
-    background-color: beige;
-    height: 20rem;
-}
 
-#menu {
+/* -----Menu------ */
+
+#menuWrapper {
     display: grid;
-    grid-template-columns: 25% 25%;
-    height: 50rem;
-    background-image: url("images/Menu/spread1.jpg");
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    background-image: url("Images/Menu/WoodOne.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    justify-content: center;
+    padding: 5rem;
 }
 
 .menuBox {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
     justify-content: center;
     border: 2px solid black;
 }
 
-h3 {
-    width: 400%;
+.tenTo,
+.anteUp,
+.apps,
+.desserts {
+    grid-column: 1 / 3;
 }
 
-h2 {
+.entrees,
+.sides {
+    grid-row: 5 / 8;
+}
+
+.pmenu {
+    margin: .4rem;
+}
+
+.hMenu {
     justify-content: center;
+    margin: .5rem;
+}
+
+.hDesc {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.menuTitle {
+    display: grid;
+    justify-content: center;
+    grid-column: 1 / 3;
+}
+
+.divMenu {
+    display: grid;
+    justify-content: center;
+}
+
+
+/* -----Body----- */
+
+body {
+    margin: 0;
+    background-image: url("/images/butcherPaper1.jpg");
+}
+
+#about {
+    background-color: beige;
+    height: 20rem;
 }
 
 #three {
