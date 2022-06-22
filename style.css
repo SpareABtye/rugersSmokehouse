@@ -12,16 +12,17 @@ h3 {
 /* -----Cover----- */
 
 #cover {
-    display: grid;
+    display: flex;
     background-image: url("Images/Logo/Smoker.jpg");
     background-repeat: no-repeat;
     background-size: 200rem 100rem;
     background-position: center center;
     height: 20rem;
-    justify-content: center;
+    border-bottom: 1rem solid black;
 }
 
 .logo {
+    transform: translateX(30%);
     padding-top: .5rem;
 }
 
@@ -30,8 +31,23 @@ h3 {
 }
 
 .buttonsDiv {
+    display: grid;
+    align-content: end;
+    justify-content: end;
+    grid-template-columns: repeat(2, 1fr);
     width: 15rem;
     align-items: flex-start;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
 }
 
 
@@ -42,7 +58,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     grid-auto-rows: minmax(100px, auto);
-    background-image: url("Images/Menu/Wood.jpg");
+    /* background-image: url("Images/Menu/Wood.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
