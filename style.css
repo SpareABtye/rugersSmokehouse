@@ -9,6 +9,32 @@ h3 {
 }
 
 
+/* -----Cover----- */
+
+#cover {
+    display: grid;
+    background-image: url("Images/Logo/Smoker.jpg");
+    background-repeat: no-repeat;
+    background-size: 200rem 100rem;
+    background-position: center center;
+    height: 20rem;
+    justify-content: center;
+}
+
+.logo {
+    padding-top: .5rem;
+}
+
+.coverButtons {
+    width: 5rem;
+}
+
+.buttonsDiv {
+    width: 15rem;
+    align-items: flex-start;
+}
+
+
 /* -----Menu------ */
 
 #menuWrapper {
@@ -16,7 +42,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     grid-auto-rows: minmax(100px, auto);
-    background-image: url("Images/Menu/WoodOne.jpg");
+    background-image: url("Images/Menu/Wood.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -75,11 +101,6 @@ h3 {
 body {
     margin: 0;
     background-image: url("/images/butcherPaper1.jpg");
-}
-
-#about {
-    background-color: beige;
-    height: 20rem;
 }
 
 #three {
