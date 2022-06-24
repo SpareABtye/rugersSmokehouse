@@ -7,7 +7,7 @@
     justify-content: space-between;
     background-image: url("Images/Logo/Smoker.jpg");
     background-repeat: no-repeat;
-    background-size: 150rem 75rem;
+    background-size: 120rem 75rem;
     background-position: center center;
     height: 32.25rem;
     border-bottom: 1rem solid black;
@@ -17,21 +17,18 @@
     padding-top: .5rem;
 }
 
-.coverButtons {
-    width: 10rem;
-    font-size: 1.62em;
-    color: #9f4d38;
-    font-family: 'Caveat Brush';
-    border-bottom: 2px black solid;
+.navItem {
+    list-style: none;
 }
 
-button {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 0;
-    font: inherit;
-    outline: inherit;
+a:link,
+a:visited,
+a:hover,
+a:active {
+    cursor: default;
+    font-size: 2rem;
+    color: #9f4d38;
+    font-family: 'Caveat Brush';
 }
 
 
@@ -70,8 +67,15 @@ button {
     grid-row: 5 / 8;
 }
 
+.tenTo {
+    display: grid;
+}
+
+.tenTitle {}
+
 .pmenu {
     margin: .4rem;
+    font-size: 130%;
 }
 
 .hMenu {
