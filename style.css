@@ -1,44 +1,28 @@
-/* -----Nav----- */
-
-#navbar {
-    text-align: center;
-}
-
-h3 {
-    margin: 0;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nanum+Brush+Script&display=swap');
 
 /* -----Cover----- */
 
 #cover {
     display: flex;
+    justify-content: space-between;
     background-image: url("Images/Logo/Smoker.jpg");
     background-repeat: no-repeat;
-    background-size: 200rem 100rem;
+    background-size: 150rem 75rem;
     background-position: center center;
-    height: 20rem;
+    height: 32.25rem;
     border-bottom: 1rem solid black;
 }
 
 .logo {
-    transform: translateX(30%);
     padding-top: .5rem;
 }
 
 .coverButtons {
-    width: 5rem;
-}
-
-.buttonsDiv {
-    display: grid;
-    align-content: end;
-    justify-content: end;
-    grid-template-columns: repeat(2, 1fr);
-    width: 15rem;
-    align-items: flex-start;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
+    width: 10rem;
+    font-size: 1.62em;
+    color: #9f4d38;
+    font-family: 'Caveat Brush';
+    border-bottom: 2px black solid;
 }
 
 button {
