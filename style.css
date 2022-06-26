@@ -3,22 +3,27 @@
 /* -----Cover----- */
 
 #cover {
-    display: flex;
-    justify-content: space-between;
-    background-image: url("Images/Logo/Smoker.jpg");
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    /* background-image: url("");
     background-repeat: no-repeat;
-    background-size: 120rem 75rem;
-    background-position: center center;
-    height: 32.25rem;
+    background-size: 60rem 90rem;
+    background-position: center center; */
+    height: 16.59rem;
     border-bottom: 1rem solid black;
-}
-
-.logo {
-    padding-top: .5rem;
 }
 
 .navItem {
     list-style: none;
+}
+
+.coverImage {
+    padding-top: .5rem;
+}
+
+#logo {
+    justify-content: center;
+    position: relative;
 }
 
 a:link,
@@ -71,7 +76,8 @@ a:active {
     display: grid;
 }
 
-.tenTitle {}
+
+/* .tenTitle {} */
 
 .pmenu {
     margin: .4rem;
