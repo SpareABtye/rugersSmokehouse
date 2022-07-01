@@ -1,20 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Nanum+Brush+Script&display=swap');
+* {
+    font-family: 'Caveat Brush';
+}
+
+li {
+    list-style: none;
+}
+
 
 /* -----Cover----- */
 
 #cover {
-    display: grid;
-    grid-template-columns: .5fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: .5fr 1fr; */
     /* background-image: url("");
     background-repeat: no-repeat;
     background-size: 60rem 90rem;
     background-position: center center; */
-    height: 16.59rem;
+    height: auto;
     border-bottom: 1rem solid black;
 }
 
-.navItem {
-    list-style: none;
+img.resize {
+    width: auto;
+    /* you can use % */
+    height: auto;
+}
+
+#buttonsDiv {
+    width: auto;
+    height: auto;
 }
 
 .coverImage {
@@ -22,8 +38,7 @@
 }
 
 #logo {
-    justify-content: center;
-    position: relative;
+    margin-left: 20em;
 }
 
 a:link,
@@ -33,7 +48,37 @@ a:active {
     cursor: default;
     font-size: 2rem;
     color: #9f4d38;
-    font-family: 'Caveat Brush';
+}
+
+@media all and (max-width: 1030px) and (min-width: 500px) {
+    #logo {
+        margin-left: 2em;
+    }
+}
+
+
+/* -----Photography----- */
+
+
+/* #photos {
+    border-bottom: 1rem solid black;
+} */
+
+#photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    overflow: hidden;
+    border-bottom: 1rem solid black;
+    padding-top: 1rem;
+    padding-bottom: .6rem;
+}
+
+.photo {
+    /* flex-shrink: 0; */
+    width: 100%;
+    max-height: 30em;
 }
 
 
@@ -49,7 +94,7 @@ a:active {
     background-size: cover;
     background-position: center center; */
     padding: 5rem;
-    font-size: 3vh;
+    font-size: 2.5vh;
 }
 
 .entrees,
@@ -83,12 +128,6 @@ a:active {
     grid-column: 1 / 3;
 }
 
-
-/* .pmenu {
-    margin: .4rem;
-    font-size: 130%;
-} */
-
 .hMenu {
     margin: .5rem;
 }
@@ -116,19 +155,18 @@ a:active {
 
 body {
     margin: 0;
-    background-image: url("/images/butcherPaper1.jpg");
-}
-
-#three {
-    height: 20rem;
-    background-color: beige;
-}
-
-#four {
-    height: 20rem;
 }
 
 #footer {
     height: 5rem;
     background-color: beige;
+}
+
+
+/* -----Contact / Location----- */
+
+#contact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
