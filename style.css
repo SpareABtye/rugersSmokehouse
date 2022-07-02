@@ -58,11 +58,6 @@ a:active {
 
 /* -----Photography----- */
 
-
-/* #photos {
-    border-bottom: 1rem solid black;
-} */
-
 #photos {
     display: flex;
     justify-content: center;
@@ -81,7 +76,41 @@ a:active {
 }
 
 
-/* -----Menu Rep------ */
+/* -----Menu Divs.------------------------------- */
+
+
+/* Div Transitions */
+
+.menuBox:hover .child,
+.menuBox:focus .child {
+    -ms-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.menuBox:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.menuBox:hover .child:before,
+.menuBox:focus .child:before {
+    display: block;
+}
+
+.menuBox:hover span,
+.menuBox:focus span {
+    display: block;
+}
+
+
+/*  */
 
 #menuGrid {
     display: flex;
@@ -92,7 +121,6 @@ a:active {
     background-image: url('Images/Body/woodTwo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .menuBox {
@@ -113,40 +141,9 @@ a:active {
     transition: all .5s;
 }
 
-.menuBox:hover .child,
-.menuBox:focus .child {
-    -ms-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-.menuBox:before {
-    content: "";
-    display: none;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(52, 73, 94, 0.932);
-}
-
-.menuBox:hover .child:before,
-.menuBox:focus .child:before {
-    display: block;
-}
-
-.menuBox:hover span,
-.menuBox:focus span {
-    display: block;
-}
-
 span {
-    display: none;
     font-size: 35px;
-    font-family: sans-serif;
+    font-family: 'Caveat Brush';
     text-align: center;
     margin: auto;
     position: absolute;
