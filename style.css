@@ -8,10 +8,6 @@ li {
 }
 
 body {
-    background-image: url('Images/Body/woodTwo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     margin: 0;
 }
 
@@ -78,6 +74,10 @@ a:active {
     justify-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    background-image: url('Images/Body/woodTwo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .menuBox {
@@ -176,6 +176,10 @@ span {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    background-image: url('Images/Body/woodTwo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .menuDescBox {
