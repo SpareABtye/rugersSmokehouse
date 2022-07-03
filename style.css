@@ -183,6 +183,9 @@ span {
 }
 
 .menuDescBox {
+    display: grid;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
     border: 2px solid black;
 }
@@ -207,26 +210,26 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    justify-items: center;
     color: #f0f8ff;
     font-size: 1.5rem;
+    overflow: hidden;
 }
 
 .title {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .vvv {
-    background-image: url('Images/item.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: #2c0201 solid 1px;
     border-radius: .5rem;
     margin: 2rem;
-    height: 30rem;
-    width: 30rem;
+}
+
+.menuImage {
+    border-radius: 30px;
 }
 
 .divMenu {
