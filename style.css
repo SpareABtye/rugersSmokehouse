@@ -11,40 +11,26 @@ li {
 /* -----Cover----- */
 
 #cover {
-    display: flex;
-    flex-wrap: wrap;
     background-image: url("Images/Photos/truck4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    flex-wrap: wrap;
     height: auto;
     border-bottom: 1rem solid black;
 }
 
-img.resize {
-    width: auto;
-    /* you can use % */
-    height: auto;
-}
-
-#buttonsDiv {
-    width: auto;
-    height: auto;
-}
-
-.coverImage {
-    padding-top: .5rem;
-}
-
 #logo {
     margin-left: 20em;
+    padding-top: .5rem;
 }
 
 a:link,
 a:visited,
 a:hover,
 a:active {
-    cursor: default;
+    cursor: pointer;
     font-size: 2rem;
     color: #000000;
 }
@@ -55,6 +41,13 @@ a:active {
     }
 }
 
+body {
+    background-image: url('Images/Body/woodTwo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 
 /* -----Photography----- */
 
@@ -62,15 +55,12 @@ a:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    align-self: stretch;
-    overflow: hidden;
     border-bottom: 1rem solid black;
     padding-top: 1rem;
     padding-bottom: .6rem;
 }
 
 .photo {
-    /* flex-shrink: 0; */
     width: 100%;
     max-height: 30em;
 }
@@ -79,48 +69,14 @@ a:active {
 /* -----Menu Divs.------------------------------- */
 
 
-/* Div Transitions */
-
-.menuBox:hover .child,
-.menuBox:focus .child {
-    -ms-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
-}
-
-.menuBox:before {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.menuBox:hover .child:before,
-.menuBox:focus .child:before {
-    display: block;
-}
-
-.menuBox:hover span,
-.menuBox:focus span {
-    display: block;
-}
-
-
-/*  */
+/* Categories & Transitions */
 
 #menuGrid {
+    border-bottom: 1rem solid black;
     display: flex;
     justify-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    border-bottom: 1rem solid black;
-    background-image: url('Images/Body/woodTwo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .menuBox {
@@ -143,7 +99,6 @@ a:active {
 
 span {
     font-size: 35px;
-    font-family: 'Caveat Brush';
     text-align: center;
     margin: auto;
     position: absolute;
@@ -152,11 +107,12 @@ span {
     bottom: 0;
     right: 0;
     height: 50px;
-    cursor: pointer;
-    text-decoration: none;
 }
 
 .child {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -166,6 +122,18 @@ span {
     -o-transition: all 1s;
     transition: all 1s;
 }
+
+.menuBox:hover .child,
+.menuBox:focus .child {
+    -ms-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+/* Div Images & href  */
 
 .link {
     position: absolute;
@@ -178,91 +146,40 @@ span {
 
 .appetizers {
     background-image: url('Images/Menu/menuApps.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .tenToGetIn {
     background-image: url('Images/Menu/menuTen.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .anteUp {
     background-image: url('Images/Menu/menuAnte.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .desserts {
     background-image: url('Images/Menu/menuDes.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .entree {
     background-image: url('Images/Menu/menuEntree.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .side {
     background-image: url('Images/Menu/menusides.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 
 /* -----Menu------ */
 
 #menuWrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    grid-auto-rows: minmax(100px, auto);
-    /* background-image: url("Images/Menu/Wood.jpg"); */
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; */
-    padding: 5rem;
-    font-size: 2.5vh;
-}
-
-.entrees,
-.sides {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row: 5 / 8;
-    gap: 1rem;
-    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .menuDescBox {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     border: 2px solid black;
-    grid-column: 1 / 3;
-}
-
-.title {
-    grid-column: 1/ 4;
-}
-
-.tenItem {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-.tenTo {
-    grid-column: 1 / 3;
 }
 
 .hMenu {
@@ -274,25 +191,51 @@ span {
     margin-bottom: 2rem;
 }
 
-.menuTitle {
-    display: grid;
+.title {
+    display: flex;
     justify-content: center;
-    grid-column: 1 / 3;
+    color: #f0f8ff;
+    font-size: 2rem;
 }
 
-.divMenu,
+.menuContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #f0f8ff;
+    font-size: 1.5rem;
+}
+
 .title {
     display: grid;
     justify-content: center;
     align-items: center;
 }
 
+.vvv {
+    background-image: url('Images/item.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: #2c0201 solid 1px;
+    border-radius: .5rem;
+    margin: 2rem;
+    height: 30rem;
+    width: 30rem;
+}
+
+.divMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: .5rem;
+    margin: 2rem;
+    height: 30rem;
+    width: 30rem;
+}
+
 
 /* -----Body----- */
-
-body {
-    margin: 0;
-}
 
 #footer {
     height: 5rem;
@@ -306,4 +249,6 @@ body {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: #f0f8ff;
+    margin: 1rem 5rem 3rem 5rem;
 }
