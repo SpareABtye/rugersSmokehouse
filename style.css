@@ -15,7 +15,7 @@ body {
 /* -----Cover----- */
 
 #cover {
-    background-image: url("Images/Photos/truck4.jpg");
+    background-image: url("Images/Photos/torchSmoker.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -78,6 +78,8 @@ a:active {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: #1a1a1a;
+    text-shadow: 3px 3px #afafaf73;
 }
 
 .menuBox {
@@ -187,7 +189,13 @@ span {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-    border: 2px solid black;
+    margin: 2rem;
+    border: 2px solid #500000;
+    border-radius: 70px;
+    color: #9f4d38;
+    text-shadow: 1px 1px #f0f8ff;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .hMenu {
@@ -202,8 +210,10 @@ span {
 .title {
     display: flex;
     justify-content: center;
-    color: #f0f8ff;
+    align-items: center;
     font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
 }
 
 .menuContainer {
@@ -211,7 +221,6 @@ span {
     flex-wrap: wrap;
     justify-content: space-around;
     justify-items: center;
-    color: #f0f8ff;
     font-size: 1.5rem;
     overflow: hidden;
 }
