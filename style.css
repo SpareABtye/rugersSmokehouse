@@ -34,13 +34,6 @@ a:active {
     color: #000000;
 }
 
-@media all and (max-width: 1030px) and (min-width: 500px) {
-    #logo {
-        margin-left: 2em;
-    }
-}
-
-
 /* -----Menu Divs.------------------------------- */
 
 
@@ -251,6 +244,7 @@ span {
 
   .header {
     background-image: url('Images/Photos/torchSmoker.jpg');
+    background-position: 50% 30%;
     background-size: cover;
     position: fixed;
     width: 100%;
@@ -269,6 +263,8 @@ span {
     padding: 20px 20px;
     text-decoration: none;
     border-radius: 100px;
+    color: #f0f8ff;
+    text-shadow: 5px 5px #500000;
   }
   
   .header li a:hover,
