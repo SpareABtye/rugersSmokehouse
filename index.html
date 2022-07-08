@@ -7,25 +7,21 @@
     <title>Rugers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div id="cover">
-        <div id="buttonsDiv">
-            <ul id="nav">
-                <li class="navItem"><a href="#menuWrapper">MENU</a>
-                    <li class="navItem"><a href="#contact">LOCATION</a>
-                        <li class="navItem"><a href="#contact">CONTACT</a>
-            </ul>
-        </div>
-        <div id="logo">
-            <!-- <img class="coverImage" src="Images/Logo/RugersHeaderSix.png" alt="Rugers"> -->
-        </div>
-    </div>
-    <div id="photos">
-        <div>
-            <img class="photo" src="Images/Photos/truck.jpg" alt="Truck">
-        </div>
+    <header class="header">
+        <a href="#top" class="logo"><img class="navImage" src="Images/Logo/rugersHead.png"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="#menuWrapper">MENU</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#contact">LOCATION</a></li>
+        </ul>
+      </header>
+      <div id="top"></div>
     </div>
     <div id="menuGrid">
         <div class="menuBox">
@@ -81,14 +77,13 @@
         <div>
             <h3>CONTACT US</h3>
             <ul class="information ">
-                <li>PHONE - (123)456-7890</li>
-                <li>LOCATION - 123 qwe dr 78640</li>
-                <li>EMAIL CONATACT FORM BELOW</li>
+                <li>PHONE - (737)404-8054</li>
+                <li>LOCATION - 801 Chestnut Street San Marcos, TX</li>
             </ul>
         </div>
         <div class="map ">
             <div class="mapouter ">
-                <div class="gmap_canvas "><iframe width="600 " height="500 " id="gmap_canvas " src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed " frameborder="0 " scrolling="no " marginheight="0
+                <div class="gmap_canvas "><iframe width="600 " height="500 " id="gmap_canvas " src="https://maps.google.com/maps?q=801%20Chestnut%20Street%20San%20Marcos,%20TX&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0 " scrolling="no " marginheight="0
                 " marginwidth="0 "></iframe>
                     <a href="https://123movies-to.org "></a><br>
                     <style>
@@ -107,7 +102,7 @@
                             overflow: hidden;
                             background: none!important;
                             max-height: 20rem;
-                            max-width: 16rem;
+                            max-width: 20rem;
                             border: black .1rem solid;
                             border-radius: .25rem;
                         }
@@ -229,8 +224,8 @@
             </div>
         </div>
     </div>
-    <div id="footer"></div>
     <script src="script.js " async defer></script>
 </body>
 
 </html>
+

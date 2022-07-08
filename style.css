@@ -25,11 +25,6 @@ body {
     border-bottom: 1rem solid black;
 }
 
-#logo {
-    margin-left: 20em;
-    padding-top: .5rem;
-}
-
 a:link,
 a:visited,
 a:hover,
@@ -43,23 +38,6 @@ a:active {
     #logo {
         margin-left: 2em;
     }
-}
-
-
-/* -----Photography----- */
-
-#photos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1rem solid black;
-    padding-top: 1rem;
-    padding-bottom: .6rem;
-}
-
-.photo {
-    width: 100%;
-    max-height: 30em;
 }
 
 
@@ -192,8 +170,8 @@ span {
     margin: 2rem;
     border: 2px solid #500000;
     border-radius: 70px;
-    color: #9f4d38;
-    text-shadow: 1px 1px #f0f8ff;
+    color: #f0f8ff;
+    text-shadow: 5px 5px #500000;
     text-align: center;
     text-transform: uppercase;
 }
@@ -213,7 +191,6 @@ span {
     align-items: center;
     font-size: 2rem;
     text-align: center;
-    text-decoration: underline;
 }
 
 .menuContainer {
@@ -269,3 +246,135 @@ span {
     background-color: #f0f8ff;
     margin: 1rem 5rem 3rem 5rem;
 }
+
+/* ----- Navbar / Hamburger Menu ------- */
+
+  .header {
+    background-image: url('Images/Photos/torchSmoker.jpg');
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    border-radius: 100px;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #bfbebe31;
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding-top: 2px; 
+    padding-left: 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+  }
+  
+  .header .menu-icon .navicon {
+    background: #600606;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background: #600606;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  
+  @media (min-width: 48em) {
+    .header li {
+      float: left;
+    }
+    .header li a {
+      padding: 20px 30px;
+    }
+    .header .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .header .menu-icon {
+      display: none;
+    }
+  }
+
