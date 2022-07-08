@@ -243,16 +243,16 @@ span {
 /* ----- Navbar / Hamburger Menu ------- */
 
   .header {
+    display: flex;
     background-image: url('Images/Photos/torchSmoker.jpg');
     background-position: 50% 30%;
     background-size: cover;
-    position: fixed;
     width: 100%;
-    z-index: 3;
+    padding-top: 10px;
   }
   
   .header ul {
-    margin: 0;
+    margin-left: 1rem;
     padding: 0;
     list-style: none;
     overflow: hidden;
@@ -263,8 +263,7 @@ span {
     padding: 20px 20px;
     text-decoration: none;
     border-radius: 100px;
-    color: #f0f8ff;
-    text-shadow: 5px 5px #500000;
+    color: #500000;
   }
   
   .header li a:hover,
@@ -274,30 +273,31 @@ span {
   
   .header .logo {
     display: block;
-    float: left;
+    /* float: left; */
     font-size: 2em;
     padding-top: 2px; 
     padding-left: 20px;
     text-decoration: none;
+    margin-left: auto;
   }
   
-  /* menu */
+/* -----Menu Icon */
   
   .header .menu {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+    background-color: #f0f8ff25;
   }
   
-  /* menu icon */
+/* ----Menu Icon */
   
   .header .menu-icon {
     cursor: pointer;
-    display: inline-block;
-    float: right;
     padding: 28px 20px;
-    position: relative;
-    user-select: none;
+    max-height: 5px;
+    background-color: #f0f8ff48;
+    border-radius: 10px;
   }
   
   .header .menu-icon .navicon {
@@ -307,6 +307,10 @@ span {
     position: relative;
     transition: background .2s ease-out;
     width: 18px;
+  }
+
+  .menu {
+    border-radius: 10px;
   }
   
   .header .menu-icon .navicon:before,
@@ -328,7 +332,7 @@ span {
     top: -5px;
   }
   
-  /* menu btn */
+/* --Menu Button */
   
   .header .menu-btn {
     display: none;
@@ -355,8 +359,6 @@ span {
     top: 0;
   }
   
-  /* 48em = 768px */
-  
   @media (min-width: 48em) {
     .header li {
       float: left;
@@ -365,8 +367,8 @@ span {
       padding: 20px 30px;
     }
     .header .menu {
-      clear: none;
-      float: right;
+      clear: both;
+      float: left;
       max-height: none;
     }
     .header .menu-icon {
