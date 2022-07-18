@@ -12,14 +12,18 @@
 <body>
     <div>
         <header class="header">
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-                <li><a href="#menuWrapper">MENU</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-                <li><a href="#contact">LOCATION</a></li>
-            </ul>
-            <a href="#top" class="logo"><img class="navImage" src="Images/Logo/rugersHead.png"></a>
+            <div class="nav-bar">
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="#menuWrapper">MENU</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#contact">LOCATION</a></li>
+                </ul>
+        </div>
+            <div class="logo-container">
+                <img class="navImage" src="Images/Logo/RugersLogo.png" alt="rugers-smokehouse" height="200rem">
+        </div>
         </header>
     </div>
     <div id="menuGrid">
@@ -79,6 +83,27 @@
                 <li>PHONE - (737)404-8054</li>
                 <li>LOCATION - 801 Chestnut Street San Marcos, TX</li>
             </ul>
+        </div>
+        <div class="contact-form">
+            <div class="container">
+                <form action="/action_page.php">
+                  <label for="name">YOUR NAME:</label>
+                  <input type="text" id="name" name="name" placeholder="...">
+              
+                  <label for="inquiry">HOW CAN WE HELP?</label>
+                  <select id="inquiry" name="inquiry">
+                    <option value="catering">Catering</option>
+                    <option value="questions">Questions</option>
+                    <option value="feedback">Feeback</option>
+                    <option value="other">Other</option>
+                  </select>
+              
+                  <label for="subject"></label>
+                  <textarea id="subject" name="subject" placeholder="..." style="height:100px"></textarea>
+              
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
         </div>
         <div class="map ">
             <div class="mapouter ">

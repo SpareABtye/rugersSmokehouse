@@ -30,7 +30,7 @@ a:visited,
 a:hover,
 a:active {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1rem;
     color: #000000;
 }
 
@@ -234,21 +234,59 @@ span {
 
 #contact {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     background-color: #f0f8ff;
     margin: 1rem 5rem 3rem 5rem;
 }
 
+/* ----Contact Form----- */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
 /* ----- Navbar / Hamburger Menu ------- */
 
+.logo-container {
+  display: grid;
+  justify-content: center;
+}
+
   .header {
-    display: flex;
+    display: grid;
     background-image: url('Images/Photos/torchSmoker.jpg');
     background-position: 50% 30%;
     background-size: cover;
     width: 100%;
     padding-top: 10px;
+    position: relative;
   }
   
   .header ul {
@@ -273,31 +311,32 @@ span {
   
   .header .logo {
     display: block;
-    /* float: left; */
     font-size: 2em;
     padding-top: 2px; 
     padding-left: 20px;
     text-decoration: none;
     margin-left: auto;
   }
+
   
-/* -----Menu Icon */
+/* ---------------Menu Icon */
+
+.menu {
+  /* clear: both; */
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  background-color: #f0f8ff78;
+}
   
-  .header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-    background-color: #f0f8ff25;
-  }
-  
-/* ----Menu Icon */
-  
-  .header .menu-icon {
+ .menu-icon {
     cursor: pointer;
     padding: 28px 20px;
     max-height: 5px;
     background-color: #f0f8ff48;
     border-radius: 10px;
+    display: flex;
+    max-width: 1rem;
+    margin-left: 1rem;
   }
   
   .header .menu-icon .navicon {
@@ -313,6 +352,14 @@ span {
     border-radius: 10px;
   }
   
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
     background: #600606;
@@ -323,23 +370,17 @@ span {
     transition: all .2s ease-out;
     width: 100%;
   }
+
   
-  .header .menu-icon .navicon:before {
-    top: 5px;
-  }
-  
-  .header .menu-icon .navicon:after {
-    top: -5px;
-  }
-  
-/* --Menu Button */
+/* ------------------Menu Button Transformation */
+
   
   .header .menu-btn {
     display: none;
   }
   
   .header .menu-btn:checked ~ .menu {
-    max-height: 240px;
+    max-height: 200px;
   }
   
   .header .menu-btn:checked ~ .menu-icon .navicon {
