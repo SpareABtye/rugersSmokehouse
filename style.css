@@ -40,7 +40,6 @@ a:active {
 /* Categories & Transitions */
 
 #menuGrid {
-    border-bottom: 1rem solid black;
     display: flex;
     justify-items: center;
     flex-wrap: wrap;
@@ -238,6 +237,10 @@ span {
     justify-content: space-between;
     background-color: #f0f8ff;
     margin: 1rem 5rem 3rem 5rem;
+}
+
+.info-phone {
+  border-bottom: 2px solid #00000086;
 }
 
 /* ----Contact Form----- */
